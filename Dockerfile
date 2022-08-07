@@ -17,7 +17,7 @@ RUN dnf -y install https://rpms.remirepo.net/enterprise/remi-release-8.rpm
 RUN  dnf module reset php -y    
 
 # enable php8.0
-RUN dnf module install php:remi-8.0 -y
+RUN dnf module install php:remi-8.1 -y
 
 # other binaries
 RUN dnf -y install yum-utils mysql rsync wget git 
